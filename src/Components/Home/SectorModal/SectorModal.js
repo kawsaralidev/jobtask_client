@@ -18,7 +18,7 @@ const SectorModal = ({ data }) => {
         console.log(id);
         const proced = window.confirm("Are you sure? you want to delete");
         if (proced) {
-            const url = `http://localhost:5000/data/${id}`;
+            const url = `https://floating-headland-50908.herokuapp.com/data/${id}`;
             fetch(url, {
                 method: "DELETE",
             })
@@ -35,7 +35,7 @@ const SectorModal = ({ data }) => {
     };
 
     const onSubmit = (data) => {
-        axios.put(`http://localhost:5000/data/${_id}`, data).then((res) => {
+        axios.put(`https://floating-headland-50908.herokuapp.com/data/${_id}`, data).then((res) => {
             alert("data update successfully");
             console.log("data update successfully");
             window.location.reload();

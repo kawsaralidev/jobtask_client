@@ -7,27 +7,29 @@ const SectorData = () => {
     const [menu, setMenu] = useState([]);
 
     useEffect(() => {
-        fetch("http://localhost:5000/data")
+        fetch("https://floating-headland-50908.herokuapp.com/data")
             .then((res) => res.json())
             .then((data) => setMenu(data.reverse()));
     }, [menu]);
     return (
-        <Container>
-            <div className="  py-5">
-                <div className="data-container">
-                    <div className=" row">
-                        {menu?.map((data) => (
-                            <Sector key={data.id} data={data}></Sector>
-                        ))}
+        <div style={{ backgroundColor: "lightgray" }}>
+            <Container>
+                <div className="  py-5">
+                    <div className="data-container">
+                        <div className=" row">
+                            {menu?.map((data) => (
+                                <Sector key={data.id} data={data}></Sector>
+                            ))}
+                        </div>
                     </div>
+                    <Link to="/home">
+                        <Button className="btn-regular mt-3" variant="primary">
+                            Home
+                        </Button>
+                    </Link>
                 </div>
-                <Link to="/home">
-                    <Button className="btn-regular mt-3" variant="primary">
-                        Home
-                    </Button>
-                </Link>
-            </div>
-        </Container>
+            </Container>
+        </div>
     );
 };
 

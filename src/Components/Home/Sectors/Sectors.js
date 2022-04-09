@@ -27,7 +27,7 @@ const Sectors = () => {
         const newData = { name, box, item };
         console.log(newData);
         data.preventDefault();
-        axios.post("http://localhost:5000/data", newData).then((res) => {
+        axios.post("https://floating-headland-50908.herokuapp.com/data", newData).then((res) => {
             if (res.data.insertedId) {
                 alert("Data Added Successfully");
             }
@@ -74,7 +74,7 @@ const Sectors = () => {
                         </Button>
                         <Link to="/sectorData">
                             <Button className="btn-regular mx-3" variant="primary">
-                                Sector
+                                Your ata
                             </Button>
                         </Link>
                     </Form>
