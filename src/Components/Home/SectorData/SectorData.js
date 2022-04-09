@@ -9,7 +9,7 @@ const SectorData = () => {
     useEffect(() => {
         fetch("http://localhost:5000/data")
             .then((res) => res.json())
-            .then((data) => setMenu(data));
+            .then((data) => setMenu(data.reverse()));
     }, [menu]);
     return (
         <Container>

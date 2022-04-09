@@ -69,11 +69,11 @@ const SectorModal = ({ data }) => {
                             </Form.Group>
 
                             <div>
-                                <Button className="btn-regular" variant="secondary" onClick={handleClose}>
-                                    Close
-                                </Button>
-                                <Button className="btn-regular mx-3" type="submit" variant="primary">
+                                <Button className="btn-regular " type="submit" variant="primary">
                                     Save
+                                </Button>
+                                <Button className="btn-regular mx-3" variant="secondary" onClick={handleClose}>
+                                    Close
                                 </Button>
                             </div>
                         </Form>
