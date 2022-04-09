@@ -1,0 +1,29 @@
+.title-data{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    margin: 20px auto;
+border: 1px solid black;
+}
+.title-div{
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    height: 300px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.title-scroll{
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    margin-top: -30px;
+}
+.data-box{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.data-container{
+border: 1px solid black;
+border-radius: 4px;
+}
