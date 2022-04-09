@@ -74,7 +74,7 @@ const Sectors = () => {
                         </Button>
                         <Link to="/sectorData">
                             <Button className="btn-regular mx-3" variant="primary">
-                                Your ata
+                                Your Data
                             </Button>
                         </Link>
                     </Form>
